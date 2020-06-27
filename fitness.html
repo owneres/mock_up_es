@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mock up for admin view -> business site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="admin_view.css">
+</head>
+
+
+<body>
+  <div id="leftnavbar" class="sidenav">
+    <a href="admin_view.html"><img src="img/logo.svg" alt="">Admin tools</a>
+    <a href="#"><img src="img/profile.png" alt="">Profiilini</a>
+    <a href="#"><img src="img/survey.png" alt="">Kyselyt</a>
+    <a href="#"><img src="img/user.png" alt="">Tili</a>
+    <a href="#"><img src="img/arrow.png" alt="">Kirjaudu ulos</a>
+  </div>
+
+  <div id="main">
+    <h1>Mock up for admin view</h1>
+    <h2>Fitness sports (example of mock business site)</h2>
+
+    <p>Fitness sports's unique url: <a href="#">www.effectivescience.com/fitnesssports/3k4j</a></p>
+
+    <section id="subsc-num" class="white-section">
+      <br>
+      <h3>Number of completed set of questionnaires</h3>
+      <div class="container-fluid">
+
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <h3 class="numbers-title">Subscribed</h3>
+            <p id="subsc-p" class="numbers-p">40</p>
+          </div>
+
+          <div class="col-lg-4">
+            <h3 class="numbers-title">Used</h3>
+            <p id="used-p" class="numbers-p">11</p>
+          </div>
+
+          <div class="col-lg-4">
+            <h3 class="numbers-title">Left</h3>
+            <p id="left-p" class="numbers-p">29</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="subsc-num-ch">
+      <hr>
+      <h3>Change the subscribed number of completed set of questionnaires</h3>
+      <label for="subscNum">New subscription total:</label>
+      <input type="number" id="subscNum"" name=" subscNum" value="0" min="0" max="10000" size="6" onchange="doalert(this)> OR
+      <label for=" subscInf">New subscription license:</label>
+      <input type="checkbox" id="subscInf" name="subscInf" onchange="doalert(this)" />
+      <p>License might not be used, but we probably should have the option.</p>
+      <hr>
+    </section>
+
+    <section id="subsc-surveys" class="white-section">
+      <hr>
+      <h3>Subscribed set of questionnaires</h3>
+      <ul class="noBullets">
+        <li><input type="checkbox" id="survey1" name="survey1" value="survey1" checked>
+          <label for="survey1"> Aptitute survey</label></li>
+        <li><input type="checkbox" id="survey2" name="survey2" value="survey2">
+          <label for="survey2"> Healthy lifestyle survey</label></li>
+        <li><input type="checkbox" id="survey3" name="survey3" value="survey3">
+          <label for="survey2"> Healthy lifestyle survey2</label></li>
+        <li><input type="checkbox" id="survey4" name="survey4" value="survey4" checked>
+          <label for="survey2"> Relationship survey</label></li>
+        <li><input type="checkbox" id="survey5" name="survey5" value="survey5">
+          <label for="survey2"> Parenting survey</label></li>
+        <li class="dotdotdot">...</li>
+        <li><input type="checkbox" id="surveyN" name="surveyN" value="surveyN">
+          <label for="surveyN"> Last survey on a long list of surveys</label></li>
+      </ul>
+      <hr>
+    </section>
+    <section id="changes">
+      <h3>Make sure all selections are correct before submitting changes</h3>
+      <button type="button" name="changes" id="changes_btn" class="new_account_btn">Submit changes</button>
+    </section>
+
+   <section class="section-space alert-divs">
+     <div class="container">
+      <div id = "success-div" class="alert alert-success alert-dismissible fade show info-div">
+        <button type="button" class="close-alert" >&times;</button>
+        <strong>Success!</strong> Subsription details have been successfully updated.
+      </div>
+      <div id = "warning-div" class="alert alert-danger alert-dismissible fade show info-div">
+        <button type="button" class="close-alert" >&times;</button>
+        <strong>Warning!</strong> The new amount of completed sets of questionnaires is lower than what has already been used.
+        No changes have been made. Check the selected values and try again.
+      </div>
+    </div>
+  </section>
+
+
+    <section class="section-space  white-section">
+      <h3>Secret key for API setup</h3>
+      <p>Some info about how the setup should be done... And what are the requirements.</p>
+      <button type="button" name="api_key" class="new_account_btn">Get API secret key</button>
+    </section>
+
+    <section class="section-space">
+      <h3>Disable the account</h3>
+      <p>Warning! You are about to disable this account!</p>
+      <p>Should disable the corporate spesific link as well as login. Data should be preserved and reactivation should be available.</p>
+      <button type="button" name="disable_btn" class="new_account_btn">Disable account</button>
+    </section>
+
+
+    <div class="footnote">
+      <div>Icons made by <a class="icons" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
+        <a class="icons" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      <div>Icons made by <a class="icons" href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from
+        <a class="icons" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+  </div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="admin_view.js" charset="utf-8"></script>
+</body>
+
+</html>
