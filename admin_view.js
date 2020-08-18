@@ -29,6 +29,10 @@ $("#changes_btn").click(function() {
   }
 });
 
+$("#search-account-btn").click(function() {
+  $("#anonym-results").css("visibility", 'visible');
+});
+
 
 $(".close-alert").click(function(){
   $(this).parent().css( "visibility", "hidden" );

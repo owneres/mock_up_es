@@ -45,7 +45,30 @@
       <button type="button" class="new_account_btn" name="newAccount">Get admin token</button>
     </section>
 
+    <section>
+      <h3>GDPR datalink removal</h3>
+      <p>
+        Anonymize user's data and remove all identifying information. Keep answer id's so that data from all different surveys
+        can be linked together, but remove email address, name, birthdate and other identifying information.
+      </p>
+      <label for="anonymize">User to be anonymized:</label>
+      <input id="anonyze" type="text" default="Give email or name" size="80">
+      <button type="button" id="search-account-btn" class="new_account_btn" name="search-account-btn">Search</button>
 
+      <div id="anonym-results">
+        <ul class="no-bullets">
+          <li><input type="checkbox" id="email1" name="email1" value="email1">
+            <label for="email1">someone@email.com, Some One</label></li>
+          <li><input type="checkbox" id="email2" name="email2" value="email2">
+            <label for="email2">someother@email.com, Some Other Account</label></li>
+        </ul>
+        <p class=red>
+          Attention! Anonymization cannot be reversed!
+        </p>
+        <button type="button" class="new_account_btn" name="anonymize_btn">Anonymize selected</button>
+      </div>
+
+    </section>
 
     <div class="footnote">
       <div>Icons made by <a class="icons" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
@@ -60,7 +83,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
+  <script src="admin_view.js" charset="utf-8"></script>
 </body>
 
 </html>
