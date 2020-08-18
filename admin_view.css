@@ -47,7 +47,7 @@ h3{
   position: absolute;
 }
 
-.noBullets{
+.no-bullets{
   list-style-type: none; /* Remove bullets */
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margins */
@@ -73,9 +73,9 @@ h3{
    font-size: 21px;
    font-weight: 100;
    padding: 8px;
-   box-shadow: 1px 1px 20px 0px #000000;
-   -webkit-box-shadow: 1px 1px 20px 0px #000000;
-   -moz-box-shadow: 1px 1px 20px 0px #000000;
+   box-shadow: 1px 1px 20px 0 #000000;
+   -webkit-box-shadow: 1px 1px 20px 0 #000000;
+   -moz-box-shadow: 1px 1px 20px 0 #000000;
    text-shadow: 1px 1px 20px #000000;
    border: solid #202226 1px;
    text-decoration: none;
@@ -189,9 +189,20 @@ h3{
   position: relative;
 }
 
-
+.bold-h2{
+  font-weight: 900;
+}
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+.red{
+  color: red;
+  font-weight: bold;
+}
+
+#anonym-results{
+  visibility: hidden;
 }
