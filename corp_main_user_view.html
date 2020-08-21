@@ -109,22 +109,22 @@
             </div>
           </div>
         </div>
-<hr />
+        <hr />
     </section>
 
     <section id="subsc-num-ch" class="white-section">
       <hr>
       <h3>I'm interested increasing our subscribed number of completed set of questionnaires</h3>
       <label for="subscNum">New subscription total:</label>
-      <input type="number" id="subscNum"" name=" subscNum" value="0" min="0" max="10000" size="6" />
+      <input type="number" id="subscNum" name="subscNum" value="0" min="0" max="10000" size="6">
       <button type="button" class="btn btn-lg btn-block btn-dark subsc-btn">Contact me</button>
       <hr>
     </section>
 
 
 
-    <section id="changes" class="section-space ">
-<hr />
+    <section id="changes" class="section-space">
+      <hr>
       <h3>Results</h3>
       <p>Possibly some results from answers thus far</p>
       <img src="./img/b5.png" alt="Big five results" />
@@ -140,10 +140,12 @@
     </section>
 
     <section id="subsc-surveys" class="section-space">
-<hr>
+      <hr>
       <h3>Get IDs</h3>
-      <label for="subscNum">Number of IDs to be generated:</label>
-      <button type="button" name="disable_btn" class="new_account_btn">Generate IDs</button>
+      <label for="subsc-id">Number of IDs to be generated:</label>
+      <input type="number" id="subsc-id" name= "subsc-id" value="0" min="0" max="10000" size="6" onchange=doalert(this)>
+      <button type="button" id="id-btn" name="id_btn" class="new_account_btn">Generate IDs</button>
+      <div id = "new-ids-div">  </div>
       <br />
       <a href="" class="add-space">Download link for generated IDs. Appears when the new IDs have been generated.</a>
       <p>The generated IDs are used by the corporate client to create individual links for their clients, personell, and/or panelists.
@@ -153,18 +155,18 @@
       <hr>
     </section>
 
-      <section class="white-section ">
+    <section class="white-section ">
       <h3>Secret key for API setup</h3>
       <p>Some info about how the setup should be done... And what are the requirements. Some limitations
         to the API are probably necessary.</p>
       <button type="button" name="api_key" class="new_account_btn">Get API secret key</button>
-      <br  />
-      <br  />
+      <br />
+      <br />
     </section>
 
     <section class="section-space">
-     <hr />
-      <h3>Create a corporate user account</h3>
+      <hr />
+      <h3>Create a corporate user (i.e. venture partner) account</h3>
       <p>Creates another corporate user account without the privilege to create more accounts.</p>
       <p>The new account should have the same view as the corporate main user except for this section.
         I.e. all the same data should be available.</p>
@@ -176,6 +178,29 @@
         The button should direct to a new account information form.
       </p>
     </section>
+
+
+
+<section class="section-space">
+  <hr />
+
+  <h3>Assign subscriptions to venture partners</h3>
+  <p>
+    The assigned value should show on the venture partner's account page as the number of subscriptions available.
+   </p>
+   <p>
+    The sum of allocated subscriptions should not exceed the number of subscriptions the corporate main user's corporate holds.
+  </p>
+  <ul class="no-bullets">
+    <li><label for="partner-subsc1">First venture partner</label>
+    <input type="number" id="partner-subsc1" name= "partner-subsc1" value="0" min="0" max="1000" size="6"></li>
+    <li><label for="partner-subsc2">Second venture partner</label>
+    <input type="number" id="partner-subsc2" name= "partner-subsc2" value="0" min="0" max="1000" size="6"></li>
+    <li>...</li>
+    <li><label for="partner-subsc3">Third venture partner</label>
+    <input type="number" id="partner-subsc3" name= "partner-subsc3" value="0" min="0" max="1000" size="6"></li>
+  </ul>
+</section>
 
 
     <div class="footnote">
@@ -195,7 +220,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="admin_view.js" charset="utf-8"></script>
+  <script src="corp_main_user_view.js" charset="utf-8"></script>
 </body>
 
 </html>
