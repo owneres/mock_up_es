@@ -206,3 +206,7 @@ h3{
 #anonym-results{
   visibility: hidden;
 }
+
+#new-ids-div{
+  visibility: hidden;
+}
